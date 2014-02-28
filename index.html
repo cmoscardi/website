@@ -1,0 +1,32 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+  <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+
+<html>
+  <head>
+    <title>Christian Moscardi | Home </title>
+    <link type='text/css' rel='stylesheet' href='css/styles.css'  />
+    <link href='http://fonts.googleapis.com/css?family=Arvo:400,700' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Lato:400,700,900' rel='stylesheet' type='text/css'>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+    <script src="js/jquery.pw-typer.js"></script>
+    <!--Props to https://github.com/philipwalton/PW_Typer -->
+    <script src="js/message.js"></script>
+  </head>
+  <body>
+
+    <ul id="message"> 
+      <li>You've stumbled upon an empty old house.</li>
+      <li>It appears to belong to Christian Moscardi...</li>
+      <li>Enter? Y/N</li>
+      <li><span id="input"></span><span id="cursor">_</span></li>
+    </ul>
+
+    <script>
+      $("#message").type({delay:500, maxInterval:50, callback:index_input_handler});
+
+       
+    </script>
+    <noscript> :( you should run javascript, i promise it won't bite </noscript>
+  </body>
+</html>

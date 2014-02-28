@@ -1,0 +1,82 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+  <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+
+<html>
+  <head>
+    <title>Christian Moscardi | Home </title>
+    <link type='text/css' rel='stylesheet' href='css/styles.css'  />
+    <link href='http://fonts.googleapis.com/css?family=Arvo:400,700' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Lato:400,700,900' rel='stylesheet' type='text/css'>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+    <script src="js/jquery.pw-typer.js"></script>
+    <script src="js/message.js"></script>
+  </head>
+  <body>
+   <div id="content">
+     
+     
+    <div id="information">
+      <div class="hidden" id="about">
+        <h1 id="nomen">Christian Moscardi</h1>
+        <p>I am 22 years old and currently finishing up my Bachelors' in Mathematics and Computer Science at Columbia University. I'm hoping to spend the foreseeable future in NYC. </p>
+
+        <p>I enjoy math, technology, science, music (I play piano), food (eating and cooking), coffee (making and drinking), beer, writing, biking, rock climbing, video games, pool, as well as many other things. Head over to the contact page if you want to chat about any of the above (or anything at all)! </p>
+
+        <p>I currently work for <a href="http://realcheapeats.com">Real Cheap Eats</a>, which you should definitely check out. I've interned at Google, researched and TAd at Columbia, and am currently looking for a full-time job.</p>
+
+        <p>Cool? Cool. You should check out my projects now!</p>
+      </div> 
+
+
+      <div class="hidden" id="links">
+        <h1 id="nomen">Christian Moscardi</h1>
+        <ul id="links">
+          <li><a href="resume.pdf">Resume</a></li>
+          <li><a href="https://github.com/cmoscardi">Github</a></li>
+          <li><a href="mailto:christianmoscardi@gmail.com">Email</a></li>
+          <li><a href="http://linkedin.com">LinkedIn</a></li>
+          <li><a href="http://last.fm/user/clucku">last.fm</a></li>
+        </ul>
+      </div>
+      
+     
+     
+      <div class="hidden" id="projects">
+        <h1 id="nomen">Christian Moscardi</h1>
+        <ul id="projects">
+          <li><a href="https://github.com/cmoscardi/lyricism">lyricism</a></li>
+          <li><a href="https://github.com/cmoscardi/carduino">carduino</a> <a href="http://dl.dropbox.com/u/24144746/20120413_151512.mp4">(with video!)</a></li>
+          <li>... And more. See github!</li>
+        </ul>
+      </div>
+
+      <div class="hidden" id="blog">
+        <h1 id="nomen">Christian Moscardi</h1>
+        <br> <br> <br>
+        <h2>Coming soon!</h2>
+
+
+      </div>
+    </div>
+
+
+    <div id="menu">   
+      <ul style:"display:none;">
+        <li id="message">You are now inside! What would you like to do?</li>
+        <li class="option">1) About me</li>
+        <li class="option">2) Links (resume, github, contact)</li>
+        <li class="option">3) Projects </li> 
+        <li class="option">4) Blog </li>
+        <li class="option"><span id="input"></span><span id="cursor">_</span></li>
+      </ul>
+    </div>
+
+  
+   </div> <!--end content -->
+    <script>
+      $("#message").show();
+      $("#message").type({delay:250, maxInterval:50,callback:homepage_input_handler});
+    </script>   
+  </body>
+</html>
